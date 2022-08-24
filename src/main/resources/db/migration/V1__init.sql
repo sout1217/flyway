@@ -1,4 +1,4 @@
-create table flyway.MEMBER
+create table MEMBER
 (
     id   bigint auto_increment,
     name varchar(255),
