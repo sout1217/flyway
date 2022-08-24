@@ -1,6 +1,4 @@
 spring:
   profiles:
-#    active: h2
-#    active: dev
-#    active: local
-    active: mysql
+#    active: staging
+    active: dev

@@ -1,4 +1,4 @@
-package com.example.flyway.entity;
+package com.example.flyway.staging.entity;
 
 
 import lombok.AllArgsConstructor;
@@ -20,10 +20,10 @@ public class Member {
 
     private String name;
 
-    private int age;
+    @Column(length = 50)
+    private String email;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "team_id")
-    private Team team;
+    @Column(length = 50)
+    private String tell;
 
 }
