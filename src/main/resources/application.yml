@@ -6,7 +6,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
-      ddl-auto: validate
+      ddl-auto: none
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl # ???
     generate-ddl: false
@@ -17,4 +17,4 @@ spring:
     user: root
     password:
     enabled: true
-    baseline-on-migrate: true # spring boot 2.x ([spring boot2] auto create version table)
+    baseline-on-migrate: false # spring boot 2.x ([spring boot2] auto create version table)
